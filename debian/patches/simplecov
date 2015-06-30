@@ -1,0 +1,21 @@
+Description: Disable simplecov
+ Disable simplecov while running tests.
+Author: Balasankar C <balasankarc@autistici.org>
+Last-Update: 2015-06-30
+---
+This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
+--- a/spec/spec_helper.rb
++++ b/spec/spec_helper.rb
+@@ -1,8 +1,8 @@
+-require 'simplecov'
++#require 'simplecov'
+ 
+-SimpleCov.start do
+-  add_filter 'spec'
+-end
++#SimpleCov.start do
++  #add_filter 'spec'
++#end
+ 
+ require 'rspec'
+ require 'rspec/its'
